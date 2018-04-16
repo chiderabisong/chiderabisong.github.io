@@ -3,10 +3,26 @@ layout: page
 tagline:
 ---
 
+<article class="home">
+<span style="font-weight: bold">Bio.</span> My major is in Environmental Studies with a focus on Environmental Assessment, Management, and Sustainable Development. I also have expertise in GIS and work with it on a day-to-day basis.
+<br><br>
+I have had extensive work experience in the Environmental field. Conducted Environmental Assessment on not less than 15 major projects involving transmission facilities in Ontario. Familiar with environmental laws and regulations, organized and monitored archaeology, involved in groundwater testing operations, conducted habitat restoration planning and created maps using ArcGIS.
+<br><br>
+I have a base knowledge of several environmental subjects as can be seen in the categories section: Climate Change, Sustainable Development, Environmental Assessment, Wildlife, Ecosystem, Biogeography and other Technical Writings.
+<br><br>
+<span style="font-weight: bold">Timeline.</span><br>
+<span style="color: rgb(132,0,0)">2014-2018:</span> <span style="color: #090;">University of Manitoba</span> Environmental Studies, Focus: Environmental Assessment<br>
+<span style="color: rgb(132,0,0)">2017:</span> <span style="color: #090;">Maple Leaf Foods Inc.</span> - Assistant Health &amp; Safety Coordinator<br>
+<span style="color: rgb(132,0,0)">2016-2017:</span> <span style="color: #090;">Hydro One Networks Inc.</span> - Environmental Planner (Co-op)<br>
+<span style="color: rgb(132,0,0)">2013-2014:</span> <span style="color: #090;">University of Ibadan</span> - BSc Geography.<br>
+<span style="color: rgb(132,0,0)">2012-2013:</span> <span style="color: #090;">Hard Castle Nigeria Ltd.</span> - IT Assistant.
+<br><br>
+<hr>
+</article>
+
 {% for post in paginator.posts %}
 
 <article class="home">
-
   <span class="post-date">
     {% assign d = post.date | date: "%d" | plus:'0' %}
     {{ post.date | date: "%B" }}
@@ -20,13 +36,11 @@ tagline:
   </span>
 
   <h2>
-      {% for post in site.posts %}
       {% if post.docurl %}
         <a href="{{ site.BASE_PATH }}{{ post.docurl }}">{{ post.title }}</a>
       {% else %}
         <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-      {% endif %}
-    {% endfor %}    
+      {% endif %} 
   </h2>
 
   <div>
